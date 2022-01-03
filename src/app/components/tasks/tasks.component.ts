@@ -1,4 +1,5 @@
 import { Component, OnInit,Input } from '@angular/core';
+
 import { TaskService } from '../../service/task.service';
 import {Task} from '../../components/Task'
 
@@ -15,7 +16,9 @@ export class TasksComponent implements OnInit {
   ){}
 
   ngOnInit(): void {
-  this.tasks=this.taskService.getTasks();
+  this.taskService.getTasks().subscribe((tasks)=>(
+    this.tasks=tasks
+  ));
   }
 
 }
