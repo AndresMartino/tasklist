@@ -6,27 +6,28 @@
 
 *{
     box-sizing: border-box;
-    margin: 0;
+    margin: 0 1px;
     padding: 0;
 }
 body{
-    font-family: sans-serif;    
+    font-family: sans-serif;  
+    background-color: rgb(211, 216, 216);  
 }
 
 .container{
-    max-width: 500px;
+    max-width: 800px;
     margin: 30px auto;
     overflow: auto;
     min-height: 300px;
-    border: 1px solid steelblue;
+    border: 2px solid steelblue;
     padding: 30px;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .btn {
     display: inline-block;
     background: #000;
-    color: #fff;
+    color: rgb(247, 247, 247);
     border: none;
     padding: 10px 20px;
     margin: 5px;
